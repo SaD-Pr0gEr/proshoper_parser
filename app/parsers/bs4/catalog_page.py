@@ -20,7 +20,7 @@ class CatalogParser(BeautifulSoup):
 
     def parse_company_name(self) -> str:
         txt = self.find('span', class_='breadcrumbs-last').text
-        return self.clean_text(txt.split()[-1])
+        return self.clean_text(txt)
 
     def parse_catalog_data(self, catalog_soup: Tag) -> CatalogData:
         link = catalog_soup.find('a', class_='catalog__link')['href']

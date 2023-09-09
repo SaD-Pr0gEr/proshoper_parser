@@ -4,7 +4,7 @@ import sqlalchemy as sa
 
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.db import BASE, engine, Session
+from app.db import BASE, engine
 
 
 class CompaniesPage(BASE):
