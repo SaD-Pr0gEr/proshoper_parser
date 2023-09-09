@@ -45,6 +45,8 @@ def app():
                 )
                 photos_data += db_display_photo_path + ','
                 pages_count += 1
+            if pages_count == 0:
+                continue
             with Session() as session:
                 data = ParsedData(
                     NAME=parsed_catalog.NAME,
