@@ -1,4 +1,5 @@
 import os.path
+import time
 
 import requests
 
@@ -61,3 +62,4 @@ def app():
                 )
                 session.add(data)
                 session.commit()
+            time.sleep(5)
