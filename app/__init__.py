@@ -31,7 +31,7 @@ def app():
             if not os.path.exists(
                 ACTION_DIR
             ):
-                os.mkdir(ACTION_DIR)
+                os.makedirs(ACTION_DIR)
             action_page = requests.get(
                 config.parser.PARSER_SITE_HOST + parsed_catalog.PAGE_LINK
             )
